@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- back button -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginTop="16dp"/>
+
+    <!-- heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="32dp"
+        android:text="Who are you?"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <!-- small info -->
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="8dp"
+        android:text="Pick your role to get started"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"/>
+
+    <!-- customer card -->
+    <LinearLayout
+        android:id="@+id/cardCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/subheading"
+        android:layout_marginTop="40dp"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I need a service"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Find and book local workers nearby"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:alpha="0.8"/>
+
+    </LinearLayout>
+
+    <!-- provider card -->
+    <LinearLayout
+        android:id="@+id/cardProvider"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/cardCustomer"
+        android:layout_marginTop="20dp"
+        android:background="@color/surface"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I offer a service"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Earn money by helping people around you"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
