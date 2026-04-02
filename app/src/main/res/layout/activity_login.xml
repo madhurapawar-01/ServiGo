@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- back button -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginTop="16dp"/>
+
+    <!-- welcome back text -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="32dp"
+        android:text="Welcome back!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <!-- small info -->
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="8dp"
+        android:text="Login to continue"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"/>
+
+    <!-- email input -->
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/subheading"
+        android:layout_marginTop="40dp"
+        android:hint="your email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="@color/surface"
+        android:textColor="@color/text_primary"/>
+
+    <!-- password input -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/inputEmail"
+        android:layout_marginTop="16dp"
+        android:hint="your password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="@color/surface"
+        android:textColor="@color/text_primary"/>
+
+    <!-- forgot password -->
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="forgot password?"
+        android:textSize="13sp"
+        android:textColor="@color/primary"/>
+
+    <!-- login button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/txtForgotPassword"
+        android:layout_marginTop="24dp"
+        android:background="@color/primary"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- signup text -->
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="don't have an account? sign up"
+        android:textSize="13sp"
+        android:textColor="@color/primary"/>
+
+</RelativeLayout>
