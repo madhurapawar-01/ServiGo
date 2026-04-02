@@ -60,9 +60,13 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         auth.signInWithEmailAndPassword(email, password)
-                .addOnSuccessListener(task -> {
+                .addOnSuccessListener(authResult -> {
                     Toast.makeText(this, "welcome back!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(this, MainActivity.class));
                     finish();
                 })
                 .addOnFailureListener(e -> {
+                    Toast.makeText(this, "oops! " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+    }
+}

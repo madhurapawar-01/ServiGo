@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "691989595562",
+    "project_id": "servigo-bfc00",
+    "storage_bucket": "servigo-bfc00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691989595562:android:fb4c4aa393038ca11d97d3",
+        "android_client_info": {
+          "package_name": "com.example.servigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-mqymrGekdHPD6tm6RUMdR66zUndWweY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
